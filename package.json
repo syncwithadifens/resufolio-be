@@ -1,0 +1,26 @@
+{
+  "name": "resufolio-be",
+  "version": "1.0.0",
+  "description": "portfolio api",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio",
+    "api"
+  ],
+  "author": "Afiv Dicky Efendy",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.11.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.1",
+    "nodemon": "^3.1.0"
+  },
+  "devDependencies": {
+    "prisma": "^5.11.0"
+  }
+}
