@@ -5,8 +5,8 @@ const app = express();
 dotenv.config();
 const PORT = process.env.PORT;
 
-app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 app.get("/", (request, response) => {
   response.send("Hello World");
