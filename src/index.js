@@ -11,6 +11,8 @@ app.use(express.json());
 app.get("/", (request, response) => {
   response.send("Hello World");
 });
+const authController = require("./controllers/auth_controller");
+app.use("/auth", authController);
 
 const userController = require("./controllers/user_controller");
 app.use("/users", userController);
