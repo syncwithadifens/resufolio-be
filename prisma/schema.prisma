@@ -12,9 +12,12 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
-model User {
-  id  Int  @id @default(autoincrement())
-  name  String 
-  birthday String
-  city String
+
+model Users{
+  id Int @id @default(autoincrement())
+  name String 
+  birthday String?
+  city String?
+  phone String?
+  avatar String? @default("https://wallpapers.com/images/featured/cool-profile-picture-87h46gcobjl5e4xu.jpg")
 }
