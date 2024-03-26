@@ -16,8 +16,46 @@ datasource db {
 model Users{
   id Int @id @default(autoincrement())
   name String 
+  email String
+  password String
   birthday String?
   city String?
   phone String?
   avatar String? @default("https://wallpapers.com/images/featured/cool-profile-picture-87h46gcobjl5e4xu.jpg")
 }
+
+model Certificates{
+  id Int @id @default(autoincrement())
+  name String
+  course String
+  description String?
+  image_url String?
+}
+
+model Education{
+  id Int @id @default(autoincrement())
+  name String
+  major String
+  graduate String
+}
+
+model Experience{
+  id Int @id @default(autoincrement())
+  name String
+  description String?
+}
+
+model Project{
+  id Int @id @default(autoincrement())
+  name String
+  description String?
+  image_url String?
+}
+
+model Skill{
+  id Int @id @default(autoincrement())
+  name String
+  skill Float
+}
+
+
